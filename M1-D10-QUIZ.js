@@ -149,7 +149,7 @@ const answer = (E) => {
 
 const printQuestion = () => {
 	const question = questions[questionIndex]
-	document.querySelector("#question").innerHTML = question.question
+	document.querySelector("#question").innerText = unescape(question.question)
 	document.querySelector("#category").innerText = question.category
 	document.querySelector("#answers").innerText = ""
 	const answers = question.incorrect_answers
