@@ -45,6 +45,14 @@ p {
 	font-weight: bolder;
 }
 
-.hidde {
+.hidden {
 	visibility: hidden;
+}
+
+.test {
+	background-color: salmon;
+}
+
+img {
+	width: 50px;
 }

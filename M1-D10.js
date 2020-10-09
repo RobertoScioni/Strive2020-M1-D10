@@ -1,3 +1,15 @@
+const htmlEx5e6 = () => {
+	let rows = document.querySelector("#htmlN4").children[0].children
+	for (let i = 0; i < rows.length; i++) {
+		image = document.createElement("img")
+		image.src = image.src.concat("img/", Math.ceil(Math.random() * 10), ".webp")
+		link = document.createElement("a")
+		link.href = "https://en.wikipedia.org/wiki/Tyson_Tan"
+		link.appendChild(image)
+		rows[i].children[1].appendChild(link)
+	}
+}
+
 const jsEx21 = () => {
 	let name = "jhon"
 	let familyName = "Doe"
@@ -108,4 +120,59 @@ const jsEx30 = (a, b) => {
 	out = sumA > sumB ? a : b
 
 	return out
+}
+
+const domEx31 = () => {
+	return document.querySelector("#container")
+}
+
+const domEx32 = () => {
+	return document.querySelectorAll("td")
+}
+
+const domEx33p = () => {
+	//fills in some innerText
+	const cells = domEx32()
+	for (let i = 0; i < cells.length; i++) {
+		cells[i].innerText = Math.random() * 100
+	}
+}
+
+const domEx33 = () => {
+	const cells = domEx32()
+	for (let i = 0; i < cells.length; i++) {
+		console.log(cells[i].innerText)
+	}
+}
+
+const domEx34 = (newText) => {
+	document.querySelector("h1").innerText = newText
+}
+
+const domEx35 = () => {
+	document.querySelector("#htmlN4").appendChild(document.createElement("tr"))
+}
+
+const domEx36 = () => {
+	const rows = document.querySelector("#htmlN4").children
+	for (let i = 0; i < rows.length; i++) {
+		rows[i].classList.add("test")
+	}
+}
+
+const domEx37 = () => {
+	document.styleSheets[0].insertRule("a {	background-color: red; }")
+}
+
+//domEx38 see window .onload on the html page
+
+const domEx39 = (listID, message) => {
+	list = document.querySelector("#" + listID)
+	newElement = document.createElement("li")
+	newElement.innerText = message
+	list.appendChild(newElement)
+}
+
+const domEx40 = (listID) => {
+	document.querySelector("#" + listID).innerText = ""
 }

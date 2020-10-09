@@ -36,7 +36,6 @@
     <script src="M1-D10.js"></script>
 	</head>
 	<body>
-		<header><h1>it's time to QUIZ!</h1></header>
 		<script>
 			const questions = [
 				{
@@ -145,15 +144,18 @@
 				//when EVERY question has an answer (google for how to get a value from a radio button with JS)
 				//IF YOU ARE DISPLAYING ONE QUESTION AT A TIME
 				//Display first question with a title + radio button
-				//when the user select the answer, pick the next question and remove this from the page after added in a varible the users' choice.
+        //when the user select the answer, pick the next question and remove this from the page after added in a varible the users' choice.
+        console.log("page loaded")
+        htmlEx5e6()
 			}
 
 			//HOW TO calculate the result
 			//You can do it in 2 ways:
 			//If you are presenting all questions together, just take all the radio buttons and check if the selected answer === correct_answer
 			//If you are presenting one question at a time, just add one point or not to the user score if the selected answer === correct_answer
-		</script>
-		<ol>
+    </script>
+    <header><h1>it's time to QUIZ!</h1></header>
+		<ol id="order">
 			<li>i thik i'll need to put the questions here</li>
 		</ol>
 		<table id="htmlN4">
@@ -186,9 +188,9 @@
 			</tr>
 		</table>
     <hr />
-    <div>
+    <div id="container">
       <p>
-        <ul>
+        <ul id="chaos">
           <li>what am i supposed to put here?</li>
         </ul>
       </p>
