@@ -56,3 +56,16 @@ p {
 img {
 	width: 50px;
 }
+
+.result {
+	text-align: center;
+	color: green;
+	font-size: xx-large;
+}
+
+.controls {
+}
+
+.input[type=number]{
+    width=30px;
+}
