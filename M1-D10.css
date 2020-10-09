@@ -1,4 +1,50 @@
 td {
+	margin: 0;
 	border: solid;
+	padding: 20px;
+	border-radius: 3px;
+	border-color: rgb(75, 134, 8);
+	border-top: dotted red;
+	border-bottom: dotted red;
+}
+
+td:first-child {
+	border-left: dotted red;
+}
+
+td:last-child {
+	border-right: dotted red;
+}
+
+#htmlN4 {
+	border: solid;
+	border-radius: 5px;
 	padding: 5px;
+}
+
+body {
+	max-width: 400px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+h1 {
+	text-align: center;
+}
+
+a {
+	color: darkred;
+}
+
+p {
+	margin: 5px;
+}
+
+.extraLargeAndBold {
+	font-size: xx-large;
+	font-weight: bolder;
+}
+
+.hidde {
+	visibility: hidden;
 }
